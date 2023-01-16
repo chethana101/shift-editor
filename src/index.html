@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="worker-src blob:; child-src blob: gap:; img-src 'self' blob: data:; default-src 'self';frame-src 'unsafe-inline' 'self' none:;script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src * 'unsafe-inline'"
+      http-equiv="Content-Security-Policy">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./resources/css/root.css" />
+    <link rel="stylesheet" href="./resources/icons/style.css" />
+    <link rel="stylesheet" href="./resources/css/index.css" />
+    <script defer src="./resources/js/toggle-action.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Title Bar -->
+    <div class="title-bar-holder">
+      <div class="title-bar">
+        <!-- Title Bar | Left -->
+        <div class="title-bar-left">
+          <div class="title-bar-logo-holder">
+            <img class="title-bar-logo" src="./resources/images/svg/logo.svg" alt="" width="20" height="20">
+            <span class="title-bar-title">Shift Editor</span>
+          </div>
+        </div>
+        <!-- Title Bar | Right -->
+        <div class="title-bar-right">
+          <div class="toggle-holder">
+            <div class="toggle-button-holder">
+              <div class="dropdown" data-id="0">
+                <div role="button">
+                  <a class="dropdown-button bg-default border-default">
+                    <span>Copy</span>
+                    <span class="icon-dropdown icon-white"></span>
+                  </a>
+                </div>
+                <ul class="dropdown-content">
+                  <li><a href="#">HTML & CSS</a></li>
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">CSS</a></li>
+                </ul>
+              </div>
+              <div class="dropdown" data-id="1">
+                <div role="button">
+                  <a class="dropdown-button">
+                    <span>Download As</span>
+                    <span class="icon-dropdown icon-white"></span>
+                  </a>
+                </div>
+                <ul class="dropdown-content">
+                  <li><a href="#">HTML</a></li>
+                  <li><a href="#">TXT</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="toggle-item" id="minimize">
+              <span class="icon-minimize toggle-icon"></span>
+            </div>
+            <div class="toggle-item" id="maximize">
+              <span class="icon-maximize toggle-icon"></span>
+            </div>
+            <div class="toggle-item toggle-bg-red" id="close">
+              <span class="icon-close toggle-icon"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
